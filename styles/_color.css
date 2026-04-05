@@ -1,0 +1,24 @@
+:root {
+  --grass-top: #feffbc;
+  --grass-drip: #cdeb8d;
+  --grass-right-edge: #67b76d;
+  --grass-left-edge: #96d078;
+  --grass-right-base: #518e55;
+  --grass-left-base: #67b76d;
+
+  --pink-50: #fff5f2;
+  --pink-100: #ffd8df;
+  --pink-200: #f5babb;
+  --pink-300: #ffaab8;
+  --pink-400: #ff9a9a;
+  --pink-500: #ff748b;
+
+  --white: #ffffff;
+
+  --green-50: #ffffe8;
+  --green-100: #cde990;
+  --green-200: #aacb73;
+  --green-300: #829460;
+  --green-400: #7ea04d;
+  --green-500: #5f8b4c;
+}
