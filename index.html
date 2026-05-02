@@ -14,8 +14,33 @@
     />
   </head>
   <body>
-    <canvas id="canvas" style="width: 100%; height: 100%"></canvas>
-    <script type="module" src="./js/main.js"></script>
+    <div class="container">
+      <div class="form-container">
+        <div class="">
+          <label for="">Width<span class="asterisk">*</span>:</label>
+          <input id="width" type="number" value="1" required />
+        </div>
+        <div class="">
+          <label for="">Height<span class="asterisk">*</span>:</label>
+          <input id="height" type="number" value="1" required />
+        </div>
+      </div>
+      <div class="option-container">
+        <div class="tile-container">
+          <canvas class="tile-option active" data-tile="grass"></canvas>
+          <canvas class="tile-option" data-tile="water"></canvas>
+          <canvas class="tile-option" data-tile="soil"></canvas>
+        </div>
+        <div class="divider"></div>
+        <div class="object-option-container">
+          <canvas class="object-option active" data-object="ponyo"></canvas>
+          <canvas class="object-option" data-object="dino"></canvas>
+        </div>
+      </div>
+      <canvas id="canvas"> </canvas>
+    </div>
+    <script type="module" src="./main.js"></script>
     <script type="module" src="./constants/constant.js"></script>
+    <script type="module" src="./component/dino.js"></script>
   </body>
 </html>

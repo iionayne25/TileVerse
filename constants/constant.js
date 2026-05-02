@@ -6,10 +6,26 @@ export const TILE_SIZE = {
     TOP_HEIGHT: 35,
     DEPTH: 45,
   },
+  WATER: {
+    EDGE_WIDTH: 100,
+    EDGE_HEIGHT: 50,
+    TOP_WIDTH: 70,
+    TOP_HEIGHT: 35,
+    DEPTH: 45,
+  },
+  SOIL: {
+    EDGE_WIDTH: 100,
+    EDGE_HEIGHT: 50,
+    TOP_WIDTH: 70,
+    TOP_HEIGHT: 35,
+    DEPTH: 45,
+  },
 };
 export const CANVAS_WIDTH = 800;
 export const BOX_WIDTH = "150px";
 export const BOX_HEIGHT = "150px";
+export const OBJECT_WIDTH = 100;
+export const OBJECT_HEIGHT = 100;
 export const DRIP_SIZE = {
   LEFT_DRIP: {
     CX: 25,

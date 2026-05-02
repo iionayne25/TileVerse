@@ -1,10 +1,27 @@
 :root {
+  /*grass*/
   --grass-top: #feffbc;
   --grass-drip: #cdeb8d;
   --grass-right-edge: #67b76d;
   --grass-left-edge: #96d078;
   --grass-right-base: #518e55;
   --grass-left-base: #67b76d;
+
+  /*water*/
+  --water-top: #c8f1fd;
+  --water-drip: #a0e2ff;
+  --water-right-edge: #88b8cc;
+  --water-left-edge: #8ec8e1;
+  --water-right-base: #7dafc5;
+  --water-left-base: #88b8cc;
+
+  /*soil*/
+  --soil-top: #dfb09b;
+  --soil-drip: #c28b73;
+  --soil-right-edge: #8f524d;
+  --soil-left-edge: #b36660;
+  --soil-right-base: #72423e;
+  --soil-left-base: #a15c56;
 
   --pink-50: #fff5f2;
   --pink-100: #ffd8df;

@@ -33,87 +33,118 @@ select {
 
 body {
   overflow: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 #canvas {
   width: 100%;
   height: 100%;
+  flex: 1;
+  min-height: 0;
   display: block;
 }
 
-.welcome-container {
+.form-container {
+  display: flex;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: start;
-  text-align: center;
-  flex-direction: column;
-  gap: 10%;
-  background-color: #ffeef4;
-  padding: 20px;
-}
-
-.option-container {
-  width: 300px;
-  height: 300px;
-  background-color: #ffd8df;
-  border-radius: 50%;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 20px;
 }
 
-.ground-container,
-.object-container {
-  display: flex;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+input {
+  border-radius: 10px;
+  border: 0.5px solid var(--green-400);
+  height: 36px;
+  outline: none;
+  padding: 0 14px;
+}
+label {
+  color: var(--green-400);
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.box-component {
-  border-radius: 16px;
-  overflow: hidden;
+:invalid input {
+  border: 1px solid red;
+}
+
+.submit-btn {
+  min-width: 40px;
+  padding: 6px 32px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid var(--pink-300);
+  color: white;
+  font-weight: 600;
+  background-color: var(--pink-500);
+  cursor: pointer;
+}
+
+:hover.submit-btn {
+  scale: 90% 90%;
+  background-color: white;
+  color: var(--pink-500);
+}
+
+.asterisk {
+  color: var(--pink-500);
+}
+
+.content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
+  gap: 20px;
   padding: 16px;
-  color: white;
-  gap: 10;
 }
 
-.box-component img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.box-component .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.box-component .content {
-  position: relative;
-  z-index: 2;
-}
-
-.box-component .title {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0;
-}
-
-#ground,
-#object {
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 20px;
+  padding: 24px;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.option-container,
+.object-option-container {
+  z-index: 10;
+  display: flex;
+
+  gap: 12px;
+}
+
+.tile-container,
+.object-container {
+  z-index: 10;
+  display: flex;
+  gap: 12px;
+}
+
+.tile-option,
+.object-option {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+  background: white;
+}
+
+.tile-option.active,
+.object-option.active {
+  border-color: var(--green-400);
+}
+
+:hover.tile-option,
+:hover.object-option {
+  scale: 110%;
+}
+
+.divider {
+  height: 80px;
+  width: 2px;
+  border-right: 1px solid var(--pink-500);
 }
